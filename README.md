@@ -42,6 +42,7 @@ uvicorn app.main:app --reload
 Acesse em: http://127.0.0.1:8000
 
 📍 Endpoints Atuais
+
 GET /: Health check (Verifica se a API está online).
 
 GET /docs: Documentação interativa (Swagger).
