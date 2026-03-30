@@ -47,6 +47,7 @@ GET /: Health check (Verifica se a API está online).
 GET /docs: Documentação interativa (Swagger).
 
 🤝 Guia de Contribuição (Baré Style)
+
   1- Crie uma Branch para sua tarefa: git checkout -b feat/nome-da-tarefa.
 
   2- Realize o Commit padrão: git commit -m "tipo: descrição curta".
