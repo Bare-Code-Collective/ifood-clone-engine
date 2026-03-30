@@ -1,56 +1,56 @@
-🍕 iFood Clone Engine - Baré Code Collective
-Este repositório contém o "motor" (backend) do projeto de engenharia reversa do iFood. O foco desta aplicação é o desenvolvimento de um sistema robusto de geolocalização e um motor de recomendação inteligente.
+# 🍕 iFood Clone Engine - Baré Code Collective
 
-🛠️ Tecnologias Utilizadas
-Python 3.10+
+> **Status do Projeto:** 🛠️ Em desenvolvimento (Setup Inicial)
 
-FastAPI: Framework moderno e de alta performance.
+Este repositório contém o "motor" (backend) do projeto de engenharia reversa do iFood. Nosso foco é construir uma API de alta performance com geolocalização e um sistema de recomendação inteligente.
 
-Uvicorn: Servidor ASGI para rodar a aplicação.
+---
 
-Pydantic: Validação de dados e esquemas.
+### 🛠️ Tecnologias Utilizadas
+* **Python 3.10+**
+* **FastAPI:** Framework moderno e rápido.
+* **Uvicorn:** Servidor ASGI.
+* **Pydantic:** Validação de dados.
 
-Python-dotenv: Gerenciamento de variáveis de ambiente.
+---
 
-🚀 Como Rodar o Projeto Localmente
-1. Clonar o repositório:
+### 🚀 Como Rodar o Projeto Localmente
 
-Bash
+**1. Clonar o repositório:**
+```bash
 git clone https://github.com/Bare-Code-Collective/ifood-clone-engine.git
 cd ifood-clone-engine
+```
 2. Configurar o Ambiente Virtual (venv):
 
-Bash
+```bash
 python -m venv venv
+
 # No Windows:
 .\venv\Scripts\activate
-# No Linux/Mac:
-source venv/bin/activate
+```
 3. Instalar as dependências:
 
-Bash
+``` Bash
 pip install -r requirements.txt
-4. Configurar as Variáveis de Ambiente:
-Crie um arquivo .env na raiz do projeto e adicione as configurações necessárias (veja o modelo no .env.example, se houver).
+```
+4. Iniciar o Servidor:
 
-5. Iniciar o Servidor:
-
-Bash
+```Bash
 uvicorn app.main:app --reload
-A API estará disponível em: http://127.0.0.1:8000
+```
+Acesse em: http://127.0.0.1:8000
 
-📍 Endpoints Principais (MVP)
-GET /: Health check da API.
+📍 Endpoints Atuais
+GET /: Health check (Verifica se a API está online).
 
-GET /cardapio-regional: Rota de teste para validação de dados geográficos.
+GET /docs: Documentação interativa (Swagger).
 
-GET /docs: Documentação automática gerada pelo Swagger.
+🤝 Guia de Contribuição (Baré Style)
+  1- Crie uma Branch para sua tarefa: git checkout -b feat/nome-da-tarefa.
 
-🤝 Como Contribuir
-Crie uma Branch para sua tarefa: git checkout -b feat/nome-da-tarefa.
+  2- Realize o Commit padrão: git commit -m "tipo: descrição curta".
 
-Realize o Commit com mensagens claras: git commit -m "feat: adiciona calculo de frete".
+  3- Envie para o GitHub: git push origin feat/nome-da-tarefa.
 
-Envie para o GitHub (Push): git push origin feat/nome-da-tarefa.
-
-Abra um Pull Request para revisão do time.
+  4- Abra um Pull Request para o time revisar.
