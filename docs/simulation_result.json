@@ -1,0 +1,159 @@
+{
+  "config": {
+    "runs": 800,
+    "top_k": 3,
+    "seed": 42
+  },
+  "metrics": {
+    "precision_at_k": 0.6737,
+    "baseline_precision_at_k": 0.675,
+    "uplift_vs_baseline": -0.0013,
+    "viable_recommendation_rate": 1.0,
+    "avg_eta_min": 29.47,
+    "avg_delivery_fee_brl": 6.8,
+    "rain_session_rate": 0.2838,
+    "high_demand_session_rate": 0.185
+  },
+  "samples": [
+    {
+      "user_id": 100,
+      "hour": 8,
+      "raining": false,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 1,
+      "recommended_ids": [
+        2,
+        1,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 100,
+      "hour": 14,
+      "raining": false,
+      "demand_level": "low",
+      "chosen_restaurant_id": 2,
+      "recommended_ids": [
+        2,
+        1,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 101,
+      "hour": 18,
+      "raining": true,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 1,
+      "recommended_ids": [
+        5,
+        7,
+        2
+      ],
+      "hit_at_k": false,
+      "baseline_hit_at_k": false
+    },
+    {
+      "user_id": 102,
+      "hour": 19,
+      "raining": false,
+      "demand_level": "low",
+      "chosen_restaurant_id": 6,
+      "recommended_ids": [
+        6,
+        2,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 102,
+      "hour": 13,
+      "raining": false,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 4,
+      "recommended_ids": [
+        6,
+        2,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 101,
+      "hour": 18,
+      "raining": false,
+      "demand_level": "low",
+      "chosen_restaurant_id": 5,
+      "recommended_ids": [
+        5,
+        7,
+        2
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 103,
+      "hour": 20,
+      "raining": false,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 4,
+      "recommended_ids": [
+        7,
+        1,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": false
+    },
+    {
+      "user_id": 101,
+      "hour": 23,
+      "raining": true,
+      "demand_level": "high",
+      "chosen_restaurant_id": 5,
+      "recommended_ids": [
+        5,
+        7,
+        2
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 100,
+      "hour": 11,
+      "raining": false,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 2,
+      "recommended_ids": [
+        2,
+        1,
+        4
+      ],
+      "hit_at_k": true,
+      "baseline_hit_at_k": true
+    },
+    {
+      "user_id": 101,
+      "hour": 11,
+      "raining": false,
+      "demand_level": "normal",
+      "chosen_restaurant_id": 1,
+      "recommended_ids": [
+        5,
+        7,
+        2
+      ],
+      "hit_at_k": false,
+      "baseline_hit_at_k": false
+    }
+  ]
+}

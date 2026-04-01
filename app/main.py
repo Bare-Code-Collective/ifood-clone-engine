@@ -1,23 +1,21 @@
 from fastapi import FastAPI
 
-app = FastAPI(
-    title="Baré Code Collective - iFood Engine",
-    description="API de recomendação e logística para o projeto iFood Clone",
-    version="0.1.0"
+from app.api.routes import (
+    analytics_router,
+    health_router,
+    recommendations_router,
+    restaurants_router,
+    simulation_router,
 )
 
-@app.get("/", tags=["Health Check"])
-def home():
-    return {
-        "status": "Online",
-        "message": "Baré Code Collective operando direto de Manaus!",
-        "versao": "0.1.0"
-    }
+app = FastAPI(
+    title="Baré Code Collective - iFood Engine",
+    description="API para recomendacao de restaurantes com filtro de viabilidade logistica",
+    version="0.2.0",
+)
 
-@app.get("/cardapio-regional", tags=["Mock"])
-def buscar_itens_regionais():
-    # Isso é apenas um exemplo para testar a rota
-    return {
-        "restaurante": "Delícias do Amazonas",
-        "destaques": ["X-Caboquinho", "Tambaqui Assado", "Suco de Cupuaçu"]
-    }
+app.include_router(health_router)
+app.include_router(restaurants_router)
+app.include_router(recommendations_router)
+app.include_router(analytics_router)
+app.include_router(simulation_router)
