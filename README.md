@@ -88,3 +88,9 @@ Rodar testes automatizados:
 ```bash
 .\venv\Scripts\python -m pytest -q
 ```
+
+## Guia de contribuicao
+1. Crie uma branch para sua tarefa: `git checkout -b feat/nome-da-tarefa`
+2. Realize commit no padrao: `git commit -m "tipo: descricao curta"`
+3. Envie para o GitHub: `git push origin feat/nome-da-tarefa`
+4. Abra um Pull Request para revisao
