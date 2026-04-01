@@ -7,7 +7,7 @@ Este repositório contém o "motor" (backend) do projeto de engenharia reversa d
 ---
 
 ### 🛠️ Tecnologias Utilizadas
-* **Python 3.10+**
+* **Python 3.14.3**
 * **FastAPI:** Framework moderno e rápido.
 * **Uvicorn:** Servidor ASGI.
 * **Pydantic:** Validação de dados.
@@ -24,7 +24,8 @@ cd ifood-clone-engine
 2. Configurar o Ambiente Virtual (venv):
 
 ```bash
-python -m venv venv
+# No Windows, garante venv com Python 3.14.3
+py -3.14 -m venv venv
 
 # No Windows:
 .\venv\Scripts\activate
